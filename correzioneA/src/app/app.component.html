@@ -1,7 +1,14 @@
+<h2>veicoli</h2>
 @for(macch of vettMezzi; track macch){
   <app-driving-list [mezz]="macch" [nol]="vettRent"></app-driving-list>
 }
 
+<h2>Dettagli</h2>
 @for(noleg of vettRent; track noleg){
   <app-rented [nole]="noleg"></app-rented>
+}
+
+<h2>Lista veicoli con noleggio</h2>
+@for(veic of vettRent; track veic){
+  <app-rent-list [veicoli]="veic"></app-rent-list> 
 }
