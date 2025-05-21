@@ -1,3 +1,7 @@
 @for(macch of vettMezzi; track macch){
-  <app-driving-list [mezz]="macch"></app-driving-list>
+  <app-driving-list [mezz]="macch" [nol]="vettRent"></app-driving-list>
+}
+
+@for(noleg of vettRent; track noleg){
+  <app-rented [nole]="noleg"></app-rented>
 }
